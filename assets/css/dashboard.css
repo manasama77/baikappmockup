@@ -1,17 +1,109 @@
-.navigasi {
-  background-color: #f26122;
-  height: 50px;
-  justify-content: center;
+@media (min-width: 320px) {
+  #bg {
+    background-image: url("../img/dashboard_bg.jpg");
+    background-color: #114e7f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .navigasi {
+    background-color: #f26122;
+    height: 40px;
+    justify-content: center;
+  }
+  .navigasi .col {
+    text-align: center;
+  }
+  .navigasi i {
+    color: #fff !important;
+    padding: 0px 50px;
+  }
+  .navigasi span {
+    color: #fff !important;
+  }
 }
-.navigasi .col {
-  text-align: center;
+@media (min-width: 360px) {
+  #bg {
+    background-image: url("../img/dashboard_bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #114e7f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .navigasi {
+    background-color: #f26122;
+    height: 45px;
+    justify-content: center;
+  }
+  .navigasi .col {
+    text-align: center;
+  }
+  .navigasi i {
+    color: #fff !important;
+    padding: 0px 60px;
+  }
+  .navigasi span {
+    color: #fff !important;
+  }
 }
-.navigasi i {
-  color: #fff !important;
-  padding: 0px 50px;
+@media (min-width: 411px) {
+  #bg {
+    background-image: url("../img/dashboard_bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #114e7f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .navigasi {
+    background-color: #f26122;
+    height: 50px;
+    justify-content: center;
+  }
+  .navigasi .col {
+    text-align: center;
+  }
+  .navigasi i {
+    color: #fff !important;
+    padding: 0px 70px;
+  }
+  .navigasi span {
+    color: #fff !important;
+  }
 }
-.navigasi span {
-  color: #fff !important;
+@media (min-width: 1024px) {
+  #bg {
+    background-image: url("../img/dashboard_bg_desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: #114e7f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .navigasi {
+    background-color: #f26122;
+    height: 40px;
+    justify-content: center;
+  }
+  .navigasi .col {
+    text-align: center;
+  }
+  .navigasi i {
+    color: #fff !important;
+    padding: 0px 50px;
+  }
+  .navigasi span {
+    color: #fff !important;
+  }
 }
 
 /*# sourceMappingURL=dashboard.css.map */

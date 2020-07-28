@@ -6,23 +6,152 @@ $black: #000;
 $white: #fff;
 $grey: #ccc;
 $orange: #f26122;
+$darkblue: #114e7f;
 
-.navigasi {
-    background-color: $orange;
-    height: 50px;
-    justify-content: center;
+$iphone5se-width: 320px;
+$galaxys5-width: 360px;
+$pixel2-width: 411px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
-    .col {
-        text-align: center;
+@media (min-width: #{$iphone5se-width}) {
+    #bg {
+        background-image: url('../img/dashboard_bg.jpg');
+        background-color: $darkblue;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
-    i {
-        color: $white !important;
-        padding: 0px 50px;
-    }
+    .navigasi {
+        background-color: $orange;
+        height: 40px;
+        justify-content: center;
 
-    span {
-        color: $white !important;
-    }
+        .col {
+            text-align: center;
+        }
 
+        i {
+            color: $white !important;
+            padding: 0px 50px;
+        }
+
+        span {
+            color: $white !important;
+        }
+    }
 }
+
+@media (min-width: #{$galaxys5-width}) {
+    #bg {
+        background-image: url('../img/dashboard_bg.jpg');
+        background-repeat: no-repeat;
+        background-color: $darkblue;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .navigasi {
+        background-color: $orange;
+        height: 45px;
+        justify-content: center;
+
+        .col {
+            text-align: center;
+        }
+
+        i {
+            color: $white !important;
+            padding: 0px 60px;
+        }
+
+        span {
+            color: $white !important;
+        }
+    }
+}
+
+@media (min-width: #{$pixel2-width}) {
+    #bg {
+        background-image: url('../img/dashboard_bg.jpg');
+        background-repeat: no-repeat;
+        background-color: $darkblue;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .navigasi {
+        background-color: $orange;
+        height: 50px;
+        justify-content: center;
+
+        .col {
+            text-align: center;
+        }
+
+        i {
+            color: $white !important;
+            padding: 0px 70px;
+        }
+
+        span {
+            color: $white !important;
+        }
+    }
+}
+
+@media (min-width: #{$desktop-width}) {
+    #bg {
+        background-image: url('../img/dashboard_bg_desktop.jpg');
+        background-repeat: no-repeat;
+        background-color: $darkblue;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .navigasi {
+        background-color: $orange;
+        height: 40px;
+        justify-content: center;
+
+        .col {
+            text-align: center;
+        }
+
+        i {
+            color: $white !important;
+            padding: 0px 50px;
+        }
+
+        span {
+            color: $white !important;
+        }
+    }
+}
+
+// .navigasi {
+//     background-color: $orange;
+//     height: 50px;
+//     justify-content: center;
+
+//     .col {
+//         text-align: center;
+//     }
+
+//     i {
+//         color: $white !important;
+//         padding: 0px 50px;
+//     }
+
+//     span {
+//         color: $white !important;
+//     }
+// }

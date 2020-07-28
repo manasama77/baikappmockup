@@ -1,0 +1,28 @@
+$font-primary: 'Poppins',
+Arial,
+sans-serif;
+
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$orange: #f26122;
+
+.navigasi {
+    background-color: $orange;
+    height: 50px;
+    justify-content: center;
+
+    .col {
+        text-align: center;
+    }
+
+    i {
+        color: $white !important;
+        padding: 0px 50px;
+    }
+
+    span {
+        color: $white !important;
+    }
+
+}

@@ -1,12 +1,12 @@
-$font-primary: 'Poppins',
-Arial,
-sans-serif;
+$font-primary: "Poppins", Arial, sans-serif;
 
 $black: #000;
 $white: #fff;
 $grey: #ccc;
 $orange: #f26122;
 $darkblue: #114e7f;
+$green: #74b741;
+$darkgreen: #008516;
 
 $iphone5se-width: 320px;
 $galaxys5-width: 360px;
@@ -14,144 +14,90 @@ $pixel2-width: 411px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-@media (min-width: #{$iphone5se-width}) {
-    #bg {
-        background-image: url('../img/dashboard_bg.jpg');
-        background-color: $darkblue;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .navigasi {
-        background-color: $orange;
-        height: 40px;
-        justify-content: center;
-
-        .col {
-            text-align: center;
-        }
-
-        i {
-            color: $white !important;
-            padding: 0px 50px;
-        }
-
-        span {
-            color: $white !important;
-        }
-    }
+body {
+  font-family: $font-primary;
+  background-color: $white;
 }
 
-@media (min-width: #{$galaxys5-width}) {
-    #bg {
-        background-image: url('../img/dashboard_bg.jpg');
-        background-repeat: no-repeat;
-        background-color: $darkblue;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+.navigasi {
+  background-color: $orange;
+  height: 40px;
+  justify-content: center;
 
-    .navigasi {
-        background-color: $orange;
-        height: 45px;
-        justify-content: center;
+  .col {
+    text-align: center;
+  }
 
-        .col {
-            text-align: center;
-        }
+  i {
+    color: $white !important;
+    padding: 0px 50px;
+  }
 
-        i {
-            color: $white !important;
-            padding: 0px 60px;
-        }
-
-        span {
-            color: $white !important;
-        }
-    }
+  span {
+    color: $white !important;
+  }
 }
 
-@media (min-width: #{$pixel2-width}) {
-    #bg {
-        background-image: url('../img/dashboard_bg.jpg');
-        background-repeat: no-repeat;
-        background-color: $darkblue;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .navigasi {
-        background-color: $orange;
-        height: 50px;
-        justify-content: center;
-
-        .col {
-            text-align: center;
-        }
-
-        i {
-            color: $white !important;
-            padding: 0px 70px;
-        }
-
-        span {
-            color: $white !important;
-        }
-    }
+h5 {
+  color: $white;
+  font-size: 14px;
+  small {
+    font-size: 11px;
+    color: $white;
+  }
 }
 
-@media (min-width: #{$desktop-width}) {
-    #bg {
-        background-image: url('../img/dashboard_bg_desktop.jpg');
-        background-repeat: no-repeat;
-        background-color: $darkblue;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .navigasi {
-        background-color: $orange;
-        height: 40px;
-        justify-content: center;
-
-        .col {
-            text-align: center;
-        }
-
-        i {
-            color: $white !important;
-            padding: 0px 50px;
-        }
-
-        span {
-            color: $white !important;
-        }
-    }
+.pp {
+  width: 60px;
 }
 
-// .navigasi {
-//     background-color: $orange;
-//     height: 50px;
-//     justify-content: center;
+.usercard {
+  border: 1 solid $white;
+  border-radius: 6px;
+}
 
-//     .col {
-//         text-align: center;
-//     }
+.huruf {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
 
-//     i {
-//         color: $white !important;
-//         padding: 0px 50px;
-//     }
+.text-black {
+  color: $black !important;
+}
 
-//     span {
-//         color: $white !important;
-//     }
-// }
+.bg-blue {
+  background-color: $darkblue;
+  color: $white;
+}
+
+.bg-green {
+  background-color: $green;
+  color: $white;
+}
+
+.bg-orange {
+  background-color: $orange;
+  color: $white;
+}
+
+.text-kecil {
+  color: $black;
+  font-size: 12px;
+}
+
+.img-small {
+  width: 100px !important;
+}
+
+.card-small-padding {
+  padding: 5px 10px !important;
+
+  label {
+    font-size: 12px;
+  }
+}
+
+.text-green {
+  color: $darkgreen;
+}

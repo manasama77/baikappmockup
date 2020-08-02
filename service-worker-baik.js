@@ -1,4 +1,4 @@
-let CACHE_NAME = 'baikapp-cache-v1';
+let CACHE_NAME = 'baikapp-cache-v3';
 var urlsToCache = [
     '/',
     '/index.html',
@@ -28,6 +28,7 @@ var urlsToCache = [
     '/vendor/html5-qrcode/html5-qrcode.min.js',
     '/vendor/jquery/jquery-3.5.1.min.js',
     '/vendor/popper/popper.min.js',
+    '/vendor/sweetalert/sweetalert.min.js',
     '/fallback.json',
 ];
 

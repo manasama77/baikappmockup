@@ -1,4 +1,4 @@
-let CACHE_NAME = "baikapp-cache-v4";
+let CACHE_NAME = "baikapp-cache-v5";
 var urlsToCache = [
   "/",
   "/index.html",
@@ -37,6 +37,7 @@ var urlsToCache = [
 
 self.addEventListener("install", function (event) {
   // Perform install steps
+  console.log(CACHE_NAME);
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log("Install service worker and opened cache");
@@ -79,7 +80,7 @@ self.addEventListener("fetch", function (event) {
 });
 
 self.addEventListener("activate", function (event) {
-  var cacheAllowlist = ["pages-cache-v1", "blog-posts-cache-v1"];
+  var cacheAllowlist = ["baikapp-cache-v5"];
 
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
@@ -87,6 +88,22 @@ self.addEventListener("activate", function (event) {
         cacheNames
           .filter(function (cacheName) {
             return cacheName != CACHE_NAME;
+          })
+          .map(function (cacheName) {
+            return caches.delete(cacheName);
+          })
+      );
+    })
+  );
+});
+
+self.addEventListener("activate", function (event) {
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames
+          .filter(function (cacheName) {
+            return true;
           })
           .map(function (cacheName) {
             return caches.delete(cacheName);

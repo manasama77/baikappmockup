@@ -43,8 +43,7 @@
         <div class="row">
             <div class="col-12">
                 <p class="lead">
-                    <strong>Riwayat Transaksi</strong><br />
-                    <small>Saldo Simpanan Pokok</small>
+                    <strong>Riwayat Transaksi</strong>
                 </p>
             </div>
         </div>
@@ -90,13 +89,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="simpanan1.html">
-                    <i class="fa fa-caret-left fa-2x"></i>
+                <a href="dashboard.html">
+                    <i class="fa fa-home fa-2x"></i>
                 </a>
             </div>
             <div class="col">
-                <a href="dashboard.html">
-                    <i class="fa fa-home fa-2x"></i>
+                <a href="simpanan1.html">
+                    <i class="fa fa-caret-left fa-2x"></i>
                 </a>
             </div>
         </div>
@@ -108,19 +107,3 @@
 <script src="vendor/bootstrap4/bootstrap.min.js"></script>
 </body>
 </html>
-
-<script>
-    $(document).ready(() => {
-        var date = new Date();
-        
-        var day = date.getDate();
-        var month = date.getMonth() + 1;
-        var year = date.getFullYear();
-        
-        if (month < 10) month = "0" + month;
-        if (day < 10) day = "0" + day;
-        
-        var today = year + "-" + month + "-" + day;
-        $("#to").attr("value", today);
-    });
-</script>

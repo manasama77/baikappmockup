@@ -7,6 +7,7 @@ $orange: #f26122;
 $darkblue: #114e7f;
 $green: #74b741;
 $darkgreen: #008516;
+$red: red;
 
 $iphone5se-width: 320px;
 $galaxys5-width: 360px;
@@ -100,4 +101,12 @@ h5 {
 
 .text-green {
   color: $darkgreen;
+}
+
+.card {
+  p {
+    small {
+      font-size: 18px;
+    }
+  }
 }

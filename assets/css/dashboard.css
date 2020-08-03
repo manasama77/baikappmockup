@@ -82,4 +82,8 @@ h5 small {
   color: #008516;
 }
 
+.card p small {
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=dashboard.css.map */
